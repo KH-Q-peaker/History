@@ -89,7 +89,12 @@
 ---
 
 - 산림청 약용식물  
-  https://www.data.go.kr/data/15012183/openapi.do
+  https://www.data.go.kr/data/15012183/openapi.do  
+
+- 산림청 숲에사는 식물정보
+  https://www.forest.go.kr/kfsweb/opda/dataMng/pblicDataView.do?pblicDataId=PBD0000057&tabs=3&mn=NKFS_06_08_02   
+
+- 
 
 # 관광
 
