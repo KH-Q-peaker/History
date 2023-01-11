@@ -8,8 +8,8 @@
 
 ---
 
-- 구글  
-  https://developers.google.com/identity/protocols/o
+- 구글
+  https://developers.google.com/identity/protocols/oauth2/web-server
 
 - 네이버  
   https://developers.naver.com/docs/login/api/api.md
