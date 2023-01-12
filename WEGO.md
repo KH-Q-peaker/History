@@ -147,6 +147,6 @@
 >    + Server
 >        + `Maven` `Apache Tomcat` `????`
 >    + 
->    <span style="color:red">강사님한테 기술스택 어떻게 쓸지 물어보고 디테일하게 작성하기</apan>
+>    <span style="color:red">강사님한테 기술스택 어떻게 쓸지 물어보고 디테일하게 작성하기</span>
 
 
