@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>WeGo-badge</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="등산멤버 모집 커뮤니티" />
+
+  <link rel="shortcut icon" href="./ico/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="./ico/favicon.ico" type="image/x-icon" />
+
+  <link rel="stylesheet" href="./css/header.css" />
+  <link rel="stylesheet" href="./css/footer.css" />
+  <link rel="stylesheet" href="./css/rankSelect.css">
+
+  <script src="./js/header.js" defer></script>
+  <script src="./js/badge.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.0/jquery-migrate.min.js"></script>
+</head>
+
+<body>
+  <div class="total-wrap">
+    <!-- hearder start -->
+    <header>
+      <div class="logoDiv">
+        <a class="logo" href="./header.html">
+          <h1 class="blind">We Go</h1>
+        </a>
+      </div>
+      <div>
+        <nav>
+          <ul class="navbar">
+            <li><a href="#">산정보</a></li>
+            <li><a href="#">등산후기</a></li>
+            <li><a href="#">랭킹</a></li>
+            <li><a href="#">모집</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="user">
+        <!-- 로그인 상태 => 현재 display: none; 상태 -->
+        <img id="userImg" class="user-profile-img" src="https://picsum.photos/id/684/600/400" alt="회원 프로필 이미지" />
+        <!-- 비로그인 상태 -->
+        <button class="login-btn"></button>
+        <div class="menubar">
+          <ul>
+            <li><a href="../mypage/mypage.html">마이페이지</a></li>
+            <li><a href="#">알림</a></li>
+            <li><a href="#">문의하기</a></li>
+            <li class="text-red"><a href="#">로그아웃</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- 
+       <div class="search-bar">
+          <form action="#" method="get">
+            <button class="search-icon" type="submit"></button>
+            <input
+              type="text"
+              name="search"
+              id="search"
+              value=""
+              placeholder="Search"
+            />
+            <button class="cancel" type="reset"></button>
+          </form>
+        </div>
+     -->
+
+    </header>
+    <!-- hearder end -->
+
+    <!-- main start -->
+    <section>
+      <!-- Contents -->
+      <div class="container">
+        <div class="rankSelect">
+          <div class="head">
+            <div class="title boxStyle">
+              🥇
+              <!-- <span>한우물왕</span> -->
+              <span>제일높왕</span>
+              <!-- <span>참대왕</span> -->
+              <!-- <span>후기왕</span> -->
+              🥇
+            </div>
+          </div>
+
+          <div class="rankers boxStyle" id="rankers">
+            <div class="item" id="2nd">
+              <div class="rankerMedal">🥈</div>
+              <div class="rankerProfile"></div>
+              <div class="rankerName">요셉</div>
+              <div class="ranker-img"></div>
+            </div>
+            <div class="item" id="1st">
+              <div class="rankerMedal">🥇</div>
+              <div class="rankerProfile"></div>
+              <div class="rankerName">김동희</div>
+              <div class="ranker-img"></div>
+            </div>
+            <div class="item" id="3rd">
+              <div class="rankerMedal">🥉</div>
+              <div class="rankerProfile"></div>
+              <div class="rankerName">저셉</div>
+              <div class="ranker-img"></div>
+            </div>
+          </div>
+
+          <div class="rankingAll boxStyle" id="rankingAll">
+            <div class="rankingList">
+              <div class="item column">
+                <div class="ranking"> <span> 순위 </span> </div>
+                <div class="userName"> <span> 유저 </span> </div>
+                <div class="val"> <span> 수치 </span> </div>
+              </div>
+              <div id="4" class="item row">
+                <div class="ranking"> <span> 4 </span> </div>
+                <div class="userName"> <span> 송인구 </span> </div>
+                <div class="val"> <span> 9000 </span> </div>
+              </div>
+              <div id="5" class="item row">
+                <div class="ranking"> <span> 5 </span> </div>
+                <div class="userName"> <span> 송인팔 </span> </div>
+                <div class="val"> <span> 8899 </span> </div>
+              </div>
+              <div id="6" class="item row">
+                <div class="ranking"></div>
+                <div class="userName"></div>
+                <div class="val"></div>
+              </div>
+              <div id="7" class="item row">
+                <div class="ranking"></div>
+                <div class="userName"></div>
+                <div class="val"></div>
+              </div>
+              <div id="8" class="item row">
+                <div class="ranking"></div>
+                <div class="userName"></div>
+                <div class="val"></div>
+              </div>
+              <div id="9" class="item row">
+                <div class="ranking"></div>
+                <div class="userName"></div>
+                <div class="val"></div>
+              </div>
+              <div id="10" class="item row">
+                <div class="ranking"></div>
+                <div class="userName"></div>
+                <div class="val"></div>
+              </div>
+              <div id="11" class="item row">
+                <div class="ranking"></div>
+                <div class="userName"></div>
+                <div class="val"></div>
+              </div>
+              <div id="12" class="item row">
+                <div class="ranking"></div>
+                <div class="userName"></div>
+                <div class="val"></div>
+              </div>
+              <div id="13" class="item row">
+                <div class="ranking"></div>
+                <div class="userName"></div>
+                <div class="val"></div>
+              </div>
+              <div id="14" class="item row">
+                <div class="ranking"></div>
+                <div class="userName"></div>
+                <div class="val"></div>
+              </div>
+              <div id="15" class="item row">
+                <div class="ranking"></div>
+                <div class="userName"></div>
+                <div class="val"></div>
+              </div>
+              <div id="16" class="item row">
+                <div class="ranking"></div>
+                <div class="userName"></div>
+                <div class="val"></div>
+              </div>
+              <div id="17" class="item row">
+                <div class="ranking"></div>
+                <div class="userName"></div>
+                <div class="val"></div>
+              </div>
+              <div id="18" class="item row">
+                <div class="ranking"></div>
+                <div class="userName"></div>
+                <div class="val"></div>
+              </div>
+              <div id="19" class="item row">
+                <div class="ranking"></div>
+                <div class="userName"></div>
+                <div class="val"></div>
+              </div>
+              <div id="20" class="item row">
+                <div class="ranking">20</div>
+                <div class="userName">나</div>
+                <div class="val">1130</div>
+              </div>
+              <div id="21" class="item row">
+                <div class="ranking"></div>
+                <div class="userName"></div>
+                <div class="val"></div>
+              </div>
+              <div id="22" class="item row">
+                <div class="ranking"></div>
+                <div class="userName"></div>
+                <div class="val"></div>
+              </div>
+              <div id="23" class="item row">
+                <div class="ranking"></div>
+                <div class="userName"></div>
+                <div class="val"></div>
+              </div>
+              <div id="24" class="item row">
+                <div class="ranking"></div>
+                <div class="userName"></div>
+                <div class="val"></div>
+              </div>
+              <div id="25" class="item row">
+                <div class="ranking"></div>
+                <div class="userName"></div>
+                <div class="val"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+  </div>
+  </section>
+  <!-- main end -->
+
+  <!-- Footer Start -->
+  <footer>
+    <div class="footer">
+      <ul>
+        <li><a href="#">사이트 도움말</a></li>
+        <li><a href="#">사이트 이용약관</a></li>
+        <li>
+          <a href="#"><strong>개인정보취급방침</strong></a>
+        </li>
+        <li><a href="#">책임의 한계와 법적고지</a></li>
+        <li><a href="#">게시중단요청서비스</a></li>
+        <li><a href="#">고객센터</a></li>
+      </ul>
+      <address>
+        Copyright ©
+        <a href="http://wego.co.kr"><strong>Wego</strong></a>
+        All Rights Reserved.
+      </address>
+      <div class="support">
+        <span class="link-bar">
+          <a href="https://www.figma.com/file/4Gfranq8Iqz4pSebwzUc1W/Final-project?node-id=0%3A1&t=UILOPhDRyS6LJiQW-1"
+            target="_blank"></a>
+          <a href="https://github.com/KH-Q-peaker?tab=repositories" target="_blank"></a>
+        </span>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer End -->
+  </div>
+</body>
+
+</html>
