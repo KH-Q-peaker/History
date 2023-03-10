@@ -1,88 +1,73 @@
+@charset "utf-8";
+
 /* common */
-.total-wrap {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    margin: auto;
-
-    min-width: 320px;
-    /* min-width: 340px; */
-    max-width: 1024px;
-}
-
-section {
-    width: 100%;
-}
-
 .container {
     width: 100%;
-    margin: 24px 0;
 
     color: #fff;
 }
 
 /* rankSelect */
 
-.boxStyle {
-    border: 0;
-    border-radius: 10px;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    background-color: rgba(78, 197, 61, 0.8);
-
-    margin: 18px 2%;
-}
-
 .rankSelect .head {
     display: flex;
-    margin: 0 0 36px;
-
-    font-size: 24px;
-    font-weight: bold;
+    margin: 0 0 24px;
 
     justify-content: center;
     align-items: center;
 }
-
+.rankSelect .boxStyle {
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    background-color: rgba(78, 197, 61, 0.8);
+}
 .rankSelect .head .title {
-    width: 144px;
-    height: 44px;
-
     display: flex;
 
     justify-content: space-around;
     align-items: center;
 
-    color: #fff;
-}
+    padding: 6px 8px;
 
+    font-size: 32px;
+}
+.head .title span{
+    font-size: 20px !important;
+    font-weight: bold;
+}
+/* rankSelect */
 .rankSelect #rankers {
     display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 1.5%;
-}
 
+    grid-template-columns: auto auto auto;
+    column-gap: 2%;
+
+    justify-content: space-evenly;
+    align-items: end;
+
+    padding: 20px;
+}
+.rankSelect #rankers,
+.rankSelect #rankerAll{
+    margin: 0 0 32px;
+}
 .rankSelect #rankers .item {
     display: flex;
 
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    padding: 15px 0;
-
-    width: 100px;
 }
-.item .rankerMedal {
+#rankers .item .rankerMedal {
+    margin: 0 0 12px;
+
     font-size: 32px;
 }
-.item .rankerProfile{
+#rankers .item .rankerPic{
     display: inline-block;
 
-    margin: 12px 0 0;
+    margin: 0 0 12px;
 
     width: 55px;
     height: 55px;
@@ -91,22 +76,27 @@ section {
     background-color: #fff;
 }
 
-.item .rankerName {
-    box-sizing: border-box;
+#rankers .item .rankerName {
+    margin: 0 0 12px;
 
-    padding: 12px 0 0;
-
-    color: #fff;
     font-size: 15px;
+    font-weight: bold;
+}
+#rankers .item .rankerVal {
+    margin: 0 0 12px;
+}
+#rankers .item#gold .rankerVal {
+    margin: 0 0 32px;
 }
 
-.ranker-img {
-    width: 100%;
+#rankers .ranker-img {
+    width: 150px;
     height: 150px;
     background: url(../svg/rank.svg);
     background-repeat: no-repeat;
     background-position: center;
 }
+/* rankingAll */
 .rankSelect #rankingAll {
     background-color: rgba(217, 217, 217, 0.85);
 }
@@ -117,7 +107,7 @@ section {
     justify-content: center;
     align-items: stretch;
 
-    padding: 0 0 24px;
+    padding: 0 0 20px;
 
     font-size: 15px;
     color: rgba(0, 0, 0, 1);
@@ -127,54 +117,64 @@ section {
 
     grid-template-columns: auto auto auto;
 
-    column-gap: 1.5%;
+    column-gap: 2%;
 
     justify-items: center;
 
-    padding: 6px 2%;
+    font-size: 15px;
 }
 .rankingList .column{
     z-index: 2;
-
-    padding: 24px 0 12px;
+    
+    margin: 0 0 12px;
+    padding: 20px 0 12px;
 
     background-color: rgba(217, 217, 217, 0.1);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 0 5px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1), 0 5px 5px rgba(0, 0, 0, 0.1);
 
-    font-size: 15px;
-    font-weight: bold;
+}
+.rankingList .column .userProfile span#pic{
+    background-color: rgba(0, 0, 0, 0) !important;
 }
 .rankingList .row{
     z-index: 1;
 
-    border : 0.5px solid rgba(0, 0, 0, 0.1);
+    padding: 6px 0 6px;
+    border-bottom : 0.5px solid rgba(0, 0, 0, 0.1);
 
-    padding: 12px 0 3px;
+    /* padding: 12px 0 6px; */
 }
-
 .rankingList .item div{
     display: flex;
 
     justify-content: center;
+    align-items: center;
 }
 .rankingList .item span{
     display: flex;
 
     justify-content: center;
 
-    width: 80px;
+    width: 90px;
 }
-.rankingList .item .userName span{
-    width: 120px;
+.rankingList .item .userProfile span#pic{
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+    
+    background-color: #fff;
+}
+.rankingList .item .userProfile span#name{
+    justify-content: flex-start;
+
+    margin: 0 0 0 12px;
 }
 
 /* Tablet*/
 @media screen and (max-width: 768px) {
-   
-}
-
-/* Phone */
-@media screen and (max-width: 425px) {
-    
-    
+    #rankers .ranker-img {
+        width: 100px;
+        height: 100px;
+    }
 }
