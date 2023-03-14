@@ -152,15 +152,6 @@
     background-position: center;
 }
 
-@media screen and (min-height: 690px) and (min-width: 769px) {
-
-    footer {
-        position: fixed;
-
-        bottom: 0px;
-    }
-
-}
 /* Tablet*/
 @media screen and (max-width: 768px) {
     .rankers {
@@ -177,16 +168,6 @@
         grid-column-end: 3;
         grid-row-start: 1;
     }
-    @media screen and (min-height: 926.5px) {
-
-        footer {
-            position: fixed;
-    
-            bottom: 0px;
-        }
-    
-    }
-   
 }
 
 
@@ -198,15 +179,6 @@
     .ranker-img {
         width: 125px;
         height: 125px;
-    }
-    @media screen and (min-height: 876px) {
-
-        footer {
-            position: fixed;
-    
-            bottom: 0px;
-        }
-    
     }
 }
 

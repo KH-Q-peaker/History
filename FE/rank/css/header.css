@@ -70,13 +70,14 @@ header {
 .header div.logoDiv,
 div.user {
   width: 180px;
+  height: 50px;
 }
 
 .logo {
   display: block;
   width: 180px;
   height: 50px;
-  background: url(../img/logo.png);
+  background: url(../img/wegoLogoRedSample.png);
   background-repeat: no-repeat;
   background-size: contain;
   cursor: pointer;
@@ -277,15 +278,14 @@ div.user {
 
   .header div.logoDiv,
   div.user {
-    width: 40px;
-
-    margin: 0 5px;
+    width: 50px;
+    height: 50px;
   }
 
   .logo {
-    width: 33px;
-    height: 33px;
-    background: url(../svg/main-icon.svg);
+    width: 50px;
+    height: 50px;
+    background: url(../img/wegoLogSanSample.png.png);
     background-repeat: no-repeat;
     background-size: contain;
     cursor: pointer;
